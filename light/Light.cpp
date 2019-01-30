@@ -29,8 +29,9 @@ namespace V2_0 {
 namespace implementation {
 
 #define LEDS            "/sys/class/leds/"
+#define LG_RGB          "/sys/devices/virtual/lg_rgb_led/use_patterns/"
 
-#define LCD_LED         LEDS "lcd-backlight/"
+#define LCD_LED         LEDS "wled/"
 #define RED_LED         LEDS "red/"
 #define GREEN_LED       LEDS "green/"
 #define BLUE_LED        LEDS "blue/"
@@ -43,6 +44,7 @@ namespace implementation {
 #define PAUSE_HI        "pause_hi"
 #define RAMP_STEP_MS    "ramp_step_ms"
 #define RGB_BLINK       "rgb_blink"
+#define SETTING         "setting"
 
 /*
  * 8 duty percent steps.
